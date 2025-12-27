@@ -20,7 +20,7 @@
       "window-controls-overlay"
   ],
   "version": "1.0",
-  "manifest_version": ,
+  "manifest_version": "1",
   "edge_side_panel": {
       "preferred_width": 1
   },
