@@ -68,7 +68,6 @@
             "label": "Mobile resources list"
         }
     ],
-    ,
     "protocol_handlers": [
         {
             "protocol": "web+jngl",
