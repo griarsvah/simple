@@ -1,4 +1,6 @@
 {
     "name": "Awesome App",
-    "short_name": "Awesome"
+    "short_name": "Awesome",
+    "lang": "en-US",
+    "start_url": "/"
 }
