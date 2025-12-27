@@ -68,22 +68,21 @@
             "label": "Mobile resources list"
         }
     ],
-    {
-        "protocol_handlers": [
-            {
-                "protocol": "web+tea",
-                "url": "/tea?type=%s"
-            },
-            {
-                "protocol": "web+coffee",
-                "url": "/coffee?type=%s"
-            }
-        ]
-    },
-    "display_override": [
-        "fullscreen",
-        "minimal-ui",
-        "standalone",
-        "window-controls-overlay"
+    "protocol_handlers": [
+        {
+            "protocol": "web+tea",
+            "url": "/tea?type=%s"
+        },
+        {
+            "protocol": "web+coffee",
+            "url": "/coffee?type=%s"
+        }
     ]
+},
+"display_override": [
+    "fullscreen",
+    "minimal-ui",
+    "standalone",
+    "window-controls-overlay"
+]
 }
