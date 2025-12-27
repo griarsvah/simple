@@ -1,243 +1,85 @@
-{
+  {
   "id": "/",
-  "dir": "ltr",
-  "lang": "en",
-  "name": "WebSite App",
   "scope": "/",
+  "lang": "en-us",
+  "name": "Repose intelligent daily mood journal",
   "display": "standalone",
-  "start_url": "/index.html",
-  "short_name": "WebSite",
-  "theme_color": "#FFFFFF",
-  "description": "An awesome progressive web app",
+  "start_url": "/",
+  "short_name": "Repose",
+  "theme_color": "#fff",
+  "description": "Repose is a mental health journal app that serves as your personal mood tracking companion and helps you organize and reflect upon your daily thoughts.",
   "orientation": "any",
-  "background_color": "#FFFFFF",
+  "background_color": "#fff",
+  "dir": "ltr",
+  "related_applications": [],
   "prefer_related_applications": false,
-  "display_override": [
-      "fullscreen",
-      "standalone",
-      "minimal-ui",
-      "standalone",
-      "window-controls-overlay"
-  ],
-  "version": "1.0",
-  "manifest_version": 2,
-  "edge_side_panel": {
-      "preferred_width": 1
-  },
-  "protocol_handlers": [
-      {
-          "protocol": "web+jngl",
-          "url": "/lookup?type=%s"
-      },
-      {
-          "protocol": "web+jnglstore",
-          "url": "/shop?for=%s"
-      }
+  "display_override": ["window-controls-overlay"],
+  "icons": [
+    {
+      "src": "https://placehold.co/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "https://placehold.co/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://placehold.co/48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "https://placehold.co/24.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    }
   ],
   "screenshots": [
-      {
-          "src": "https://placehold.co/100.png"
-      },
-      {
-          "src": "https://placehold.co/200.png"
-      },
-      {
-          "src": "https://placehold.co/300.png"
-      }
+    {
+      "src": "https://placehold.co/1617x1012.png",
+      "sizes": "1617x1012",
+      "type": "image/png"
+    }
   ],
   "features": [
-      "Cross Platform",
-      "low-latency inking",
-      "fast",
-      "useful AI"
-  ],
-  "icons": [
-      {
-          "src": "https://placehold.co/192.png",
-          "sizes": "192x192",
-          "type": "image/png",
-          "purpose": "any"
-      },
-      {
-          "src": "https://placehold.co/192.png",
-          "sizes": "192x192",
-          "type": "image/png",
-          "purpose": "maskable"
-      },
-      {
-          "src": "https://placehold.co/512.png",
-          "sizes": "512x512",
-          "type": "image/png",
-          "purpose": "any"
-      },
-      {
-          "src": "https://placehold.co/512.png",
-          "sizes": "512x512",
-          "type": "image/png",
-          "purpose": "maskable"
-      }
+    "Cross Platform",
+    "fast",
+    "simple"
   ],
   "categories": [
-      "productivity"
+    "social"
   ],
-  "launch_handler": {
-      "client_mode": "navigate-existing"
-  },
-  "edge_side_panel": {},
   "shortcuts": [
-      {
-          "name": "Start Live Session",
-          "short_name": "Start Live",
-          "description": "Jump direction into starting or joining a live session",
-          "url": "/?startLive",
-          "icons": [
-              {
-                  "src": "https://placehold.co/256.png",
-                  "sizes": "256x256"
-              }
-          ]
-      }
+    {
+      "name": "New Journal",
+      "short_name": "Journal",
+      "description": "Write a new journal",
+      "url": "/form",
+      "icons": [{ "src": "assets/icons/icon_192.png", "sizes": "192x192" }]
+    }
   ],
-"gcm_sender_id": "103953800507",
-"gcm_user_visible_only": false,
-"launch_handler": {
-  "client_mode": ["focus-existing", "auto"]
-},
-"capture_links": "existing_client_event",
-"url_handlers": [
-  {
-    "origin": "index.html"
-  }
-],
-"categories": [
-  "education",
-  "personalization",
-  "productivity"
-],
-"handle_links": "auto",
-"edge_side_panel": {
-  "preferred_width": 480
-},
-"file_handlers": [
-  {
-    "action": "index.html",
-    "accept": {
-      "text/html": [".htm", ".html"]
-    }
-  }
-],
-"features": [
-  "Cross Platform",
-  "fast",
-  "simple"
-],
-"permissions": ["index.html"],
-"scope_extensions": [
-  {
-      "type": "application/json",
-      "origin": "https://griarsvah.github.io/simple/index.html"
-    }
-],
-"web_apps": [{
-  "web_app_identity": "index.html"
-}],
-"protocol_handlers": [
-  {
-    "protocol": "web+jngl",
-    "url": "/lookup?type=%s"
-  },
-  {
-    "protocol": "web+jnglstore",
-    "url": "/shop?for=%s"
-  }
-],
-"related_applications": [
-  {
-      "platform": "webapp",
-      "url": "https://griarsvah.github.io/simple/index.html"
-  },
-  {
-      "platform": "itunes",
-      "url": "index.html"
-  },
-  {
-      "platform": "play",
-      "url": "index.html"
-  },
-  {
-      "platform": "windows",
-      "url": "index.html" 
-  }
-],
-"prefer_related_applications": false,
-"iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
-  "share_target": {
-      "action": "handle-shared-song",
-      "method": "POST",
-      "enctype": "multipart/form-data",
-      "params": {
-          "title": "title",
-          "files": [
-              {
-                  "name": "audioFiles",
-                  "accept": [
-                      "audio/wav",
-                      "audio/x-wav",
-                      "audio/mpeg",
-                      "audio/mp4",
-                      "audio/aac",
-                      "audio/ogg",
-                      "application/ogg",
-                      "audio/webm",
-                      "audio/flac"
-                  ]
-              }
-          ]
-      }
-  },
   "widgets": [
-      {
-          "name": "PWAmp mini player",
-          "short_name": "PWAmp",
-          "description": "Widget to control the PWAmp player",
-          "tag": "pwamp",
-          "ms_ac_template": "widgets/mini-player.json",
-          "data": "widgets/mini-player-data.json",
-          "screenshots": [
-              {
-                  "src": "https://placehold.co/600x400.png",
-                  "sizes": "600x400",
-                  "label": "The PWAmp mini-player widget"
-              }
-          ],
-          "icons": [
-              {
-                  "src": "https://placehold.co/48.png",
-                  "sizes": "48x48"
-              },
-              {
-                  "src": "https://placehold.co/96.png",
-                  "sizes": "96x96"
-              },
-              {
-                  "src": "https://placehold.co/128.png",
-                  "sizes": "128x128"
-              },
-              {
-                  "src": "https://placehold.co/256.png",
-                  "sizes": "256x256"
-              },
-              {
-                  "src": "https://placehold.co/512.png",
-                  "sizes": "512x512"
-              }
-          ],
-          "backgrounds": [
-              {
-                  "src": "https://placehold.co/600x400.png",
-                  "sizes": "600x400"
-              }
-          ]
-      }
+    {
+      "name": "Starter Widget",
+      "tag": "starterWidget",
+      "ms_ac_template": "widget/ac.json",
+      "data": "widget/data.json",
+      "description": "A simple widget example from pwa-starter.",
+      "screenshots": [
+        {
+          "src": "https://placehold.co/500.png",
+          "sizes": "500x500",
+          "label": "Widget screenshot"
+        }
+      ],
+      "icons": [
+        {
+          "src": "https://placehold.co/48x48.png",
+          "sizes": "48x48"
+        }
+      ]
+    }
   ]
 }
