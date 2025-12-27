@@ -65,7 +65,7 @@
           "purpose": "maskable"
       },
       {
-          "src": "https://placehold.co/-512.png",
+          "src": "https://placehold.co/512.png",
           "sizes": "512x512",
           "type": "image/png",
           "purpose": "any"
@@ -94,6 +94,145 @@
               {
                   "src": "https://placehold.co/256.png",
                   "sizes": "256x256"
+              }
+          ]
+      }
+  ],
+"gcm_sender_id": "103953800507",
+"gcm_user_visible_only": false,
+"launch_handler": {
+  "client_mode": ["focus-existing", "auto"]
+},
+"capture_links": "existing_client_event",
+"url_handlers": [
+  {
+    "origin": "index.html"
+  }
+],
+"categories": [
+  "education",
+  "personalization",
+  "productivity"
+],
+"handle_links": "auto",
+"edge_side_panel": {
+  "preferred_width": 480
+},
+"file_handlers": [
+  {
+    "action": "index.html",
+    "accept": {
+      "text/html": [".htm", ".html"]
+    }
+  }
+],
+"features": [
+  "Cross Platform",
+  "fast",
+  "simple"
+],
+"permissions": ["index.html"],
+"scope_extensions": [
+  {"origin": "index.html"}
+],
+"web_apps": [{
+  "web_app_identity": "index.html"
+}],
+"protocol_handlers": [
+  {
+    "protocol": "web+jngl",
+    "url": "/lookup?type=%s"
+  },
+  {
+    "protocol": "web+jnglstore",
+    "url": "/shop?for=%s"
+  }
+],
+"related_applications": [
+  {
+      "platform": "webapp",
+      "url": "https://griarsvah.github.io/simple/index.html"
+  },
+  {
+      "platform": "itunes",
+      "url": "index.html"
+  },
+  {
+      "platform": "play",
+      "url": "index.html"
+  },
+  {
+      "platform": "windows",
+      "url": "index.html" 
+  }
+],
+"prefer_related_applications": false,
+"iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "share_target": {
+      "action": "handle-shared-song",
+      "method": "POST",
+      "enctype": "multipart/form-data",
+      "params": {
+          "title": "title",
+          "files": [
+              {
+                  "name": "audioFiles",
+                  "accept": [
+                      "audio/wav",
+                      "audio/x-wav",
+                      "audio/mpeg",
+                      "audio/mp4",
+                      "audio/aac",
+                      "audio/ogg",
+                      "application/ogg",
+                      "audio/webm",
+                      "audio/flac"
+                  ]
+              }
+          ]
+      }
+  },
+  "widgets": [
+      {
+          "name": "PWAmp mini player",
+          "short_name": "PWAmp",
+          "description": "Widget to control the PWAmp player",
+          "tag": "pwamp",
+          "ms_ac_template": "widgets/mini-player.json",
+          "data": "widgets/mini-player-data.json",
+          "screenshots": [
+              {
+                  "src": "https://placehold.co/600x400.png",
+                  "sizes": "600x400",
+                  "label": "The PWAmp mini-player widget"
+              }
+          ],
+          "icons": [
+              {
+                  "src": "https://placehold.co/48.png",
+                  "sizes": "48x48"
+              },
+              {
+                  "src": "https://placehold.co/96.png",
+                  "sizes": "96x96"
+              },
+              {
+                  "src": "https://placehold.co/128.png",
+                  "sizes": "128x128"
+              },
+              {
+                  "src": "https://placehold.co/256.png",
+                  "sizes": "256x256"
+              },
+              {
+                  "src": "https://placehold.co/512.png",
+                  "sizes": "512x512"
+              }
+          ],
+          "backgrounds": [
+              {
+                  "src": "https://placehold.co/600x400.png",
+                  "sizes": "600x400"
               }
           ]
       }
