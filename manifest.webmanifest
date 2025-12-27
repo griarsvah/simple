@@ -5,7 +5,7 @@
   "name": "WebSite App",
   "scope": "/",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "/index.html",
   "short_name": "WebSite",
   "theme_color": "#FFFFFF",
   "description": "An awesome progressive web app",
@@ -134,7 +134,7 @@
 "permissions": ["index.html"],
 "scope_extensions": [
   {
-      "type": "service_worker",
+      "type": "application/json",
       "origin": "https://griarsvah.github.io/simple/index.html"
     }
 ],
