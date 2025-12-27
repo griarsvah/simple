@@ -133,7 +133,10 @@
 ],
 "permissions": ["index.html"],
 "scope_extensions": [
-  {"origin": "index.html"}
+  {
+      "type": "service_worker",
+      "origin": "https://griarsvah.github.io/simple/index.html"
+    }
 ],
 "web_apps": [{
   "web_app_identity": "index.html"
