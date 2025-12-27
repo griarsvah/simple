@@ -29,5 +29,40 @@
             "type": "image/png",
             "purpose": "maskable"
         }
+    ],
+    "screenshots": [
+        {
+            "src": "https://placehold.co/1617x1012.png",
+            "sizes": "1617x1012",
+            "type": "image/png"
+        },
+        {
+            "src": "https://placehold.co/1280x720.webp",
+            "sizes": "1280x720",
+            "type": "image/webp",
+            "form_factor": "wide",
+            "label": "Homescreen of Awesome App"
+        },
+        {
+            "src": "https://placehold.co/1280x720.webp",
+            "sizes": "1280x720",
+            "type": "image/webp",
+            "form_factor": "wide",
+            "label": "List of resources in Awesome App"
+        },
+        {
+            "src": "https://placehold.co/720x1280.webp",
+            "sizes": "720x1280",
+            "type": "image/webp",
+            "form_factor": "narrow",
+            "label": "Mobile homescreen of Awesome App"
+        },
+        {
+            "src": "https://placehold.co/720x1280.webp",
+            "sizes": "720x1280",
+            "type": "image/webp",
+            "form_factor": "narrow",
+            "label": "Mobile resources list"
+        }
     ]
 }
