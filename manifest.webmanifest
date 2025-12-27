@@ -68,16 +68,18 @@
             "label": "Mobile resources list"
         }
     ],
-    "protocol_handlers": [
-        {
-            "protocol": "web+jngl",
-            "url": "/lookup?type=%s"
-        },
-        {
-            "protocol": "web+jnglstore",
-            "url": "/shop?for=%s"
-        }
-    ],
+    {
+        "protocol_handlers": [
+            {
+                "protocol": "web+tea",
+                "url": "/tea?type=%s"
+            },
+            {
+                "protocol": "web+coffee",
+                "url": "/coffee?type=%s"
+            }
+        ]
+    },
     "display_override": [
         "fullscreen",
         "minimal-ui",
