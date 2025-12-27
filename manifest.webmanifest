@@ -1,7 +1,6 @@
 {
     "name": "Awesome App",
     "short_name": "Awesome",
-    "lang": "en-US",
     "start_url": "/",
     "display": "standalone",
     "description": "An awesome progressive web app",
