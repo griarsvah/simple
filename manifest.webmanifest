@@ -4,6 +4,10 @@
     "lang": "en-US",
     "start_url": "/",
     "display": "standalone",
+    "description": "An awesome progressive web app",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "orientation": "any",
     "icons": [
         {
             "src": "https://placehold.co/192.png",
@@ -64,5 +68,21 @@
             "form_factor": "narrow",
             "label": "Mobile resources list"
         }
+    ],
+    "protocol_handlers": [
+        {
+            "protocol": "web+jngl",
+            "url": "/lookup?type=%s"
+        },
+        {
+            "protocol": "web+jnglstore",
+            "url": "/shop?for=%s"
+        }
+    ],
+    "display_override": [
+        "fullscreen",
+        "minimal-ui",
+        "standalone",
+        "window-controls-overlay"
     ]
 }
