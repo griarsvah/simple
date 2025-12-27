@@ -1,63 +1,26 @@
 {
-    "id": "/?homescreen=1",
-    "start_url": "/?homescreen=1",
-    "scope": "/",
-    "version": "2.0",
-    "manifest_version": 2,
-    "name": "Awesome App",
-    "short_name": "Awesome",
-    "description": "An awesome progressive web app",
-    "lang": "en",
-    "display": "standalone",
-    "display_override": [
-        "window-controls-overlay"
-    ],
-    "orientation": "any",
-    "background_color": "#ffffff",
-    "theme_color": "#0d6efd",
-    "icons": [
-        {
-            "src": "https://placehold.co/192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "https://placehold.co/512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "screenshots": [
-        {
-            "src": "https://placehold.co/1280x720.webp",
-            "sizes": "1280x720",
-            "type": "image/webp",
-            "form_factor": "wide",
-            "label": "Homescreen of Awesome App"
-        },
-        {
-            "src": "https://placehold.co/1280x720.webp",
-            "sizes": "1280x720",
-            "type": "image/webp",
-            "form_factor": "wide",
-            "label": "List of resources in Awesome App"
-        },
-        {
-            "src": "https://placehold.co/720x1280.webp",
-            "sizes": "720x1280",
-            "type": "image/webp",
-            "form_factor": "narrow",
-            "label": "Mobile homescreen of Awesome App"
-        },
-        {
-            "src": "https://placehold.co/720x1280.webp",
-            "sizes": "720x1280",
-            "type": "image/webp",
-            "form_factor": "narrow",
-            "label": "Mobile resources list"
-        }
-    ],
-    "protocol_handlers": [
+"id": "/",
+  "dir": "ltr",
+  "lang": "en",
+  "name": "WebSite App",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "/",
+  "short_name": "WebSite",
+  "theme_color": "#FFFFFF",
+  "description": "An awesome progressive web app",
+  "orientation": "any",
+  "background_color": "#FFFFFF",
+  "prefer_related_applications": false,
+  "display_override": [
+    "window-controls-overlay"
+  ],
+    "version": "1.0",
+    "manifest_version": ,
+    "edge_side_panel": {
+        "preferred_width": 1
+    },
+"protocol_handlers": [
         {
             "protocol": "web+jngl",
             "url": "/lookup?type=%s"
@@ -66,5 +29,70 @@
             "protocol": "web+jnglstore",
             "url": "/shop?for=%s"
         }
-    ]
+    ],
+  "screenshots": [
+    {
+      "src": "https://placehold.co/100.png"
+    },
+    {
+      "src": "https://placehold.co/200.png"
+    },
+    {
+      "src": "https://placehold.co/300.png"
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "low-latency inking",
+    "fast",
+    "useful AI"
+  ],
+  "icons": [
+    {
+      "src": "https://placehold.co/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://placehold.co/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://placehold.co/-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://placehold.co/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "productivity"
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "edge_side_panel": {},
+  "shortcuts": [
+    {
+      "name": "Start Live Session",
+      "short_name": "Start Live",
+      "description": "Jump direction into starting or joining a live session",
+      "url": "/?startLive",
+      "icons": [
+        {
+          "src": "https://placehold.co/256.png",
+          "sizes": "256x256"
+        }
+      ]
+    }
+  ]
+}
 }
