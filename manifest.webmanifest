@@ -184,7 +184,7 @@
     "scope_extensions": [
         { "type": "origin", "origin": "https://griarsvah.github.io/simple/index.html" },
         { "type": "origin", "origin": "https://griarsvah.github.io/simple/" }
-    ]
+    ],
     "widgets": [
         {
             "name": "PWAmp mini player",
