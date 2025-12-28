@@ -1,12 +1,31 @@
 {
     "name": "Awesome App",
     "short_name": "Awesome",
+    "id": "/",
     "start_url": "/",
-    "display": "standalone",
+    "scope": "/",
+    "lang": "en-us",
+    "dir": "ltr",
+    "version": "1.0",
+    "manifest_version": 2,
     "description": "An awesome progressive web app",
+    "display": "standalone",
+    "display_override": [
+        "fullscreen",
+        "minimal-ui",
+        "standalone",
+        "window-controls-overlay"
+    ],
+    "orientation": "any",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "orientation": "any",
+    "related_applications": [
+        {
+            "platform": "webapp",
+            "url": "https://griarsvah.github.io/simple/index.html"
+        }
+    ],
+    "prefer_related_applications": false,
     "icons": [
         {
             "src": "https://placehold.co/192.png",
@@ -68,6 +87,23 @@
             "label": "Mobile resources list"
         }
     ],
+    "shortcuts": [
+        {
+            "name": "Start Live Session",
+            "short_name": "Start Live",
+            "description": "Jump direction into starting or joining a live session",
+            "url": "/?startLive",
+            "icons": [
+                {
+                    "src": "https://placehold.co/256.png",
+                    "sizes": "256x256"
+                }
+            ]
+        }
+    ],
+    "edge_side_panel": {
+        "preferred_width": 1
+    },
     "protocol_handlers": [
         {
             "protocol": "web+jngl",
@@ -78,10 +114,116 @@
             "url": "/shop?for=%s"
         }
     ],
-    "display_override": [
-        "fullscreen",
-        "minimal-ui",
-        "standalone",
-        "window-controls-overlay"
+    "features": [
+        "Cross Platform",
+        "fast",
+        "simple"
+    ],
+    "categories": [
+        "education",
+        "personalization",
+        "productivity"
+    ],
+    "launch_handler": {
+        "client_mode": [
+            "focus-existing",
+            "auto"
+        ]
+    },
+    "capture_links": "existing_client_event",
+    "url_handlers": [
+        {
+            "origin": "index.html"
+        }
+    ],
+    "handle_links": "auto",
+    "file_handlers": [
+        {
+            "action": "index.html",
+            "accept": {
+                "text/html": [
+                    ".htm",
+                    ".html"
+                ]
+            }
+        }
+    ],
+    "permissions": [
+        "notifications"
+    ],
+    "web_apps": [
+        {
+            "web_app_identity": "https://griarsvah.github.io/simple/index.html"
+        }
+    ],
+    "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+    "share_target": {
+        "action": "handle-shared-song",
+        "method": "POST",
+        "enctype": "multipart/form-data",
+        "params": {
+            "title": "title",
+            "files": [
+                {
+                    "name": "audioFiles",
+                    "accept": [
+                        "audio/wav",
+                        "audio/x-wav",
+                        "audio/mpeg",
+                        "audio/mp4",
+                        "audio/aac",
+                        "audio/ogg",
+                        "application/ogg",
+                        "audio/webm",
+                        "audio/flac"
+                    ]
+                }
+            ]
+        }
+    },
+    "widgets": [
+        {
+            "name": "PWAmp mini player",
+            "short_name": "PWAmp",
+            "description": "Widget to control the PWAmp player",
+            "tag": "pwamp",
+            "ms_ac_template": "widgets/mini-player.json",
+            "data": "widgets/mini-player-data.json",
+            "screenshots": [
+                {
+                    "src": "https://placehold.co/600x400.png",
+                    "sizes": "600x400",
+                    "label": "The PWAmp mini-player widget"
+                }
+            ],
+            "icons": [
+                {
+                    "src": "https://placehold.co/48.png",
+                    "sizes": "48x48"
+                },
+                {
+                    "src": "https://placehold.co/96.png",
+                    "sizes": "96x96"
+                },
+                {
+                    "src": "https://placehold.co/128.png",
+                    "sizes": "128x128"
+                },
+                {
+                    "src": "https://placehold.co/256.png",
+                    "sizes": "256x256"
+                },
+                {
+                    "src": "https://placehold.co/512.png",
+                    "sizes": "512x512"
+                }
+            ],
+            "backgrounds": [
+                {
+                    "src": "https://placehold.co/600x400.png",
+                    "sizes": "600x400"
+                }
+            ]
+        }
     ]
 }
