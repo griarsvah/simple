@@ -185,6 +185,9 @@
         { "type": "origin", "origin": "https://griarsvah.github.io/simple/index.html" },
         { "type": "origin", "origin": "https://griarsvah.github.io/simple/" }
     ],
+    "note_taking": {
+        "new_note_url": "/new_note.html"
+    }
     "widgets": [
         {
             "name": "PWAmp mini player",
