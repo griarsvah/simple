@@ -185,8 +185,17 @@
         { "type": "origin", "origin": "https://griarsvah.github.io/simple/index.html" },
         { "type": "origin", "origin": "https://griarsvah.github.io/simple/" }
     ],
-    "note_taking": {
-        "new_note_url": "/new_note.html"
+    "display_override": ["tabbed"],
+    "tab_strip": {
+      "home_tab": {
+        "scope_patterns": [
+          {"pathname": "/"},
+          {"pathname": "/index.html"}
+        ]
+      },
+      "new_tab_button": {
+        "url": "/create"
+      }
     },
     "widgets": [
         {
