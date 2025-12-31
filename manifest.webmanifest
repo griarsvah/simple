@@ -187,7 +187,7 @@
     ],
     "note_taking": {
         "new_note_url": "/new_note.html"
-    }
+    },
     "widgets": [
         {
             "name": "PWAmp mini player",
