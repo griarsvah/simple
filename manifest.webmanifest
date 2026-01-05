@@ -182,8 +182,7 @@
         }
     },
     "scope_extensions": [
-        { "type": "origin", "origin": "https://griarsvah.github.io/simple/index.html" },
-        { "type": "origin", "origin": "https://griarsvah.github.io/simple/" }
+        {"origin": "https://griarsvah.github.io/simple/index.html" }
     ],
     "display_override": ["tabbed"],
     "tab_strip": {
