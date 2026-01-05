@@ -179,11 +179,11 @@
     ],
     "display": "standalone",
     "display_override": [
-        "tabbed"
+        "window-controls-overlay",
+        "tabbed",
         "fullscreen",
         "minimal-ui",
         "standalone",
-        "window-controls-overlay"
     ],
     "tab_strip": {
       "home_tab": {
