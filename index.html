@@ -24,6 +24,13 @@
     <footer role="contentinfo">
         <p>Put copyright, etc. here.</p>
     </footer>
+
+
+    <script>
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
+      }
+    </script>
 </body>
 
 </html>
