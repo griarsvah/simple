@@ -183,7 +183,7 @@
         "tabbed",
         "fullscreen",
         "minimal-ui",
-        "standalone",
+        "standalone"
     ],
     "tab_strip": {
       "home_tab": {
