@@ -175,9 +175,10 @@
         }
     },
     "scope_extensions": [
-    {"origin": "*.griarsvah.github.io/simple/index.html"},
-    {"origin": "griarsvah.github.io/simple/index.html"},
-    {"origin": "*.github.io/simple/index.html"}
+    {
+    "origin": "https://griarsvah.github.io",
+    "type": "origin"
+  }
   ],
     "display": "standalone",
     "display_override": [
