@@ -1,7 +1,7 @@
 {
     "name": "Awesome App",
     "short_name": "Awesome",
-    "id": "/",
+    "id": "https://griarsvah.github.io/simple/",
     "start_url": "https://griarsvah.github.io/simple/",
     "scope": "https://griarsvah.github.io/simple/",
     "lang": "en-us",
@@ -85,7 +85,7 @@
             "name": "Start Live Session",
             "short_name": "Start Live",
             "description": "Jump direction into starting or joining a live session",
-            "url": "/?startLive",
+            "url": "https://griarsvah.github.io/simple/?startLive",
             "icons": [
                 {
                     "src": "https://placehold.co/256.png",
@@ -100,11 +100,11 @@
     "protocol_handlers": [
         {
             "protocol": "web+jngl",
-            "url": "/lookup?type=%s"
+            "url": "https://griarsvah.github.io/simple/lookup?type=%s"
         },
         {
             "protocol": "web+jnglstore",
-            "url": "/shop?for=%s"
+            "url": "https://griarsvah.github.io/simple/shop?for=%s"
         }
     ],
     "features": [
@@ -132,7 +132,7 @@
     "handle_links": "auto",
     "file_handlers": [
         {
-            "action": "index.html",
+            "action": "https://griarsvah.github.io/simple/index.html",
             "accept": {
                 "text/html": [
                     ".htm",
@@ -176,7 +176,7 @@
     },
     "scope_extensions": [
     {
-    "origin": "https://griarsvah.github.io",
+    "origin": "https://griarsvah.github.io/simple/",
     "type": "origin"
   }
   ],
@@ -191,12 +191,12 @@
     "tab_strip": {
       "home_tab": {
         "scope_patterns": [
-          {"pathname": "/"},
-          {"pathname": "/index.html"}
+          {"pathname": "https://griarsvah.github.io/simple//"},
+          {"pathname": "https://griarsvah.github.io/simple/index.html"}
         ]
       },
       "new_tab_button": {
-        "url": "/create"
+        "url": "https://griarsvah.github.io/simple/create"
       }
     },
     "widgets": [
@@ -205,8 +205,8 @@
             "short_name": "PWAmp",
             "description": "Widget to control the PWAmp player",
             "tag": "pwamp",
-            "ms_ac_template": "widgets/mini-player.json",
-            "data": "widgets/mini-player-data.json",
+            "ms_ac_template": "https://griarsvah.github.io/simple/widgets/mini-player.json",
+            "data": "https://griarsvah.github.io/simple/widgets/mini-player-data.json",
             "screenshots": [
                 {
                     "src": "https://placehold.co/600x400.png",
