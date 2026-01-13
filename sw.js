@@ -57,9 +57,9 @@ self.addEventListener('push', event => {
   event.waitUntil(
     self.registration.showNotification(data.title || 'Уведомление', {
       body: data.body || 'Текст',
-      icon: '/icon-192.png',
+      icon: 'https://placehold.co/192.png',
       data: {
-        url: data.url || '/'
+        url: data.url || 'https://griarsvah.github.io/simple/'
       }
     })
   )
