@@ -1,21 +1,17 @@
-// This is the "Offline copy of pages" service worker
-
-const CACHE = "pwabuilder-offline";
+// This is the "Offline page" service worker
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+
+const CACHE = "pwabuilder-page";
+
+// TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "offline.html"
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
     self.skipWaiting();
   }
 });
-
-workbox.routing.registerRoute(
-  new RegExp('/*'),
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: CACHE
-  })
-);
 
 
 
@@ -75,34 +71,3 @@ self.addEventListener('notificationclick', event => {
     clients.openWindow(event.notification.data.url)
   )
 })
-
-
-
-// Query the user for permission.
-const periodicSyncPermission = await navigator.permissions.query({
-  name: 'periodic-background-sync',
-});
-
-// Check if permission was properly granted.
-if (periodicSyncPermission.state == 'granted') {
-
-  // Register a new periodic sync.
-  await registration.periodicSync.register('fetch-new-content', {
-    // Set the sync to happen no more than once a day.
-    minInterval: 24 * 60 * 60 * 1000
-  });
-} 
-// Listen for the `periodicsync` event.
-self.addEventListener('periodicsync', event => {
-
-  // Check for correct tag on the periodicSyncPermissionsync event.
-  if (event.tag === 'fetch-new-content') {
-
-    // Execute the desired behavior with waitUntil().
-    event.waitUntil(
-
-      // This is just a hypothetical function for the behavior we desire.
-      fetchNewContent();
-    );
-  }
-});
