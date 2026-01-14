@@ -1,9 +1,9 @@
 {
     "name": "Awesome App",
     "short_name": "Awesome",
-    "id": "https://griarsvah.github.io/simple/",
-    "start_url": "https://griarsvah.github.io/simple/",
-    "scope": "https://griarsvah.github.io/simple/",
+    "id": "/simple/",
+    "start_url": "/simple/",
+    "scope": "/simple/",
     "lang": "en-us",
     "dir": "ltr",
     "version": "1.0",
@@ -15,7 +15,7 @@
     "related_applications": [
         {
             "platform": "webapp",
-            "url": "https://griarsvah.github.io/simple/index.html"
+            "url": "/simple/index.html"
         }
     ],
     "prefer_related_applications": false,
@@ -47,37 +47,18 @@
     ],
     "screenshots": [
         {
-            "src": "https://placehold.co/1617x1012.png",
-            "sizes": "1617x1012",
-            "type": "image/png"
-        },
-        {
-            "src": "https://placehold.co/1280x720.webp",
+            "src": "https://placehold.co/1280x720.png",
             "sizes": "1280x720",
-            "type": "image/webp",
+            "type": "image/png",
             "form_factor": "wide",
-            "label": "Homescreen of Awesome App"
+            "label": "Desktop view"
         },
         {
-            "src": "https://placehold.co/1280x720.webp",
-            "sizes": "1280x720",
-            "type": "image/webp",
-            "form_factor": "wide",
-            "label": "List of resources in Awesome App"
-        },
-        {
-            "src": "https://placehold.co/720x1280.webp",
+            "src": "https://placehold.co/720x1280.png",
             "sizes": "720x1280",
-            "type": "image/webp",
+            "type": "image/png",
             "form_factor": "narrow",
-            "label": "Mobile homescreen of Awesome App"
-        },
-        {
-            "src": "https://placehold.co/720x1280.webp",
-            "sizes": "720x1280",
-            "type": "image/webp",
-            "form_factor": "narrow",
-            "label": "Mobile resources list"
+            "label": "Mobile view"
         }
     ],
     "shortcuts": [
@@ -85,7 +66,7 @@
             "name": "Start Live Session",
             "short_name": "Start Live",
             "description": "Jump direction into starting or joining a live session",
-            "url": "https://griarsvah.github.io/simple/?startLive",
+            "url": "/simple/?startLive",
             "icons": [
                 {
                     "src": "https://placehold.co/256.png",
@@ -100,11 +81,11 @@
     "protocol_handlers": [
         {
             "protocol": "web+jngl",
-            "url": "https://griarsvah.github.io/simple/lookup?type=%s"
+            "url": "/simple/lookup?type=%s"
         },
         {
             "protocol": "web+jnglstore",
-            "url": "https://griarsvah.github.io/simple/shop?for=%s"
+            "url": "/simple/shop?for=%s"
         }
     ],
     "features": [
@@ -132,7 +113,7 @@
     "handle_links": "auto",
     "file_handlers": [
         {
-            "action": "https://griarsvah.github.io/simple/index.html",
+            "action": "/simple/file-handler",
             "accept": {
                 "text/html": [
                     ".htm",
@@ -146,12 +127,12 @@
     ],
     "web_apps": [
         {
-            "web_app_identity": "https://griarsvah.github.io/simple/index.html"
+            "web_app_identity": "/simple/index.html"
         }
     ],
     "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
     "share_target": {
-        "action": "handle-shared-song",
+        "action": "/simple/handle-shared-song",
         "method": "POST",
         "enctype": "multipart/form-data",
         "params": {
@@ -174,12 +155,7 @@
             ]
         }
     },
-    "scope_extensions": [
-    {
-    "origin": "https://griarsvah.github.io/simple/",
-    "type": "origin"
-  }
-  ],
+    "scope_extensions": [],
     "display": "standalone",
     "display_override": [
         "window-controls-overlay",
@@ -189,59 +165,19 @@
         "standalone"
     ],
     "tab_strip": {
-      "home_tab": {
-        "scope_patterns": [
-          {"pathname": "https://griarsvah.github.io/simple//"},
-          {"pathname": "https://griarsvah.github.io/simple/index.html"}
-        ]
-      },
-      "new_tab_button": {
-        "url": "https://griarsvah.github.io/simple/create"
-      }
-    },
-    "widgets": [
-        {
-            "name": "PWAmp mini player",
-            "short_name": "PWAmp",
-            "description": "Widget to control the PWAmp player",
-            "tag": "pwamp",
-            "ms_ac_template": "https://griarsvah.github.io/simple/widgets/mini-player.json",
-            "data": "https://griarsvah.github.io/simple/widgets/mini-player-data.json",
-            "screenshots": [
+        "home_tab": {
+            "scope_patterns": [
                 {
-                    "src": "https://placehold.co/600x400.png",
-                    "sizes": "600x400",
-                    "label": "The PWAmp mini-player widget"
-                }
-            ],
-            "icons": [
-                {
-                    "src": "https://placehold.co/48.png",
-                    "sizes": "48x48"
+                    "pathname": "/simple/"
                 },
                 {
-                    "src": "https://placehold.co/96.png",
-                    "sizes": "96x96"
-                },
-                {
-                    "src": "https://placehold.co/128.png",
-                    "sizes": "128x128"
-                },
-                {
-                    "src": "https://placehold.co/256.png",
-                    "sizes": "256x256"
-                },
-                {
-                    "src": "https://placehold.co/512.png",
-                    "sizes": "512x512"
-                }
-            ],
-            "backgrounds": [
-                {
-                    "src": "https://placehold.co/600x400.png",
-                    "sizes": "600x400"
+                    "pathname": "/simple/index.html"
                 }
             ]
+        },
+        "new_tab_button": {
+            "url": "/simple/create"
         }
-    ]
+    },
+    
 }
